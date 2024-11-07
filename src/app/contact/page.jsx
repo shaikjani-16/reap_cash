@@ -45,7 +45,7 @@ export default function ContactUs() {
       <Navbar />
       <div className="max-w-2xl mx-auto p-4 mt-16">
         <h1 className="relative z-10 text-lg md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold mb-4 mt-2">
-          Contact Us - We're Here to Help!
+          Contact Us - We&apos;re Here to Help!
         </h1>
         <p className="relative z-10 text-lg md:text-lg bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans mb-8">
           At Reap Cash, we value open communication and are dedicated to
@@ -201,7 +201,7 @@ export default function ContactUs() {
           We Look Forward to Hearing from You!
         </h2>
         <p className="text-neutral-300 mb-6">
-          At Reap Cash, we're committed to helping short-term rental hosts
+          At Reap Cash, we&apos;re committed to helping short-term rental hosts
           access their earnings efficiently. Your inquiries are important to us,
           and we strive to respond promptly.
         </p>

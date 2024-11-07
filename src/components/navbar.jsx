@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/navbar";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-function navbar({ className }) {
+function Navbar({ className }) {
   const [active, setActive] = useState(null);
 
   return (
@@ -55,4 +55,4 @@ function navbar({ className }) {
   );
 }
 
-export default navbar;
+export default Navbar;
