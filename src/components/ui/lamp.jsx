@@ -27,7 +27,7 @@ export const LampContainer = ({ children, className }) => {
     <div
       className={cn(
         "relative flex min-h-screen flex-col items-center justify-center overflow-hidden w-full rounded-md z-0",
-        "bg-white dark:bg-slate-950", // Correctly applies light/dark background
+        "bg-[#f4f2e2] dark:bg-slate-950", // Correctly applies light/dark background
         className
       )}
     >

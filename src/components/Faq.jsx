@@ -45,7 +45,7 @@ export default function FAQPage() {
       <main className="flex-1 dark:bg-black">
         <section className="w-full py-12 md:py-24 lg:py-20 dark:bg-black">
           <div className="container px-4 md:px-6">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 text-blue-600">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 text-[#041f41]">
               Frequently Asked Questions
             </h1>
             <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
@@ -65,7 +65,7 @@ export default function FAQPage() {
                   <AccordionTrigger className="text-left text-lg font-semibold">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-600">
+                  <AccordionContent className="text-[#3c4049] bg-gray-50 bg-opacity-100 p-2">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
