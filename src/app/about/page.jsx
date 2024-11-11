@@ -19,6 +19,7 @@ import {
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { LayoutGridDemo } from "@/components/layoutDemo";
 import { WobbleCardDemo } from "@/components/wooble-card";
+import { CardHoverEffectDemo2 } from "@/components/card-hoverEffect";
 
 export default function AboutUs() {
   return (
@@ -35,16 +36,19 @@ export default function AboutUs() {
           About Us
         </h1>
         <WobbleCardDemo />
-        <section className="text-4xl md:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 mb-8 mt-4">
-          <h2 className="text-white">Our Values</h2>
+        <section className="text-4xl md:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 mb-5 mt-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 mb-8">
+            Our Values
+          </h2>
           <LayoutGridDemo />
         </section>
         <section className="mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 mb-8">
             Why Choose Reap Cash?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="flex flex-col items-center text-center">
+          <div className="mb-12">
+            <CardHoverEffectDemo2 />
+            {/* <div className="flex flex-col items-center text-center">
               <Clock className="w-12 h-12 text-blue-500 mb-2" />
               <h3 className="text-xl font-semibold text-white mb-2">Speed</h3>
               <p className="text-neutral-300">
@@ -72,19 +76,19 @@ export default function AboutUs() {
                 Join a network of hosts who are unlocking their earnings with
                 Reap Cash.
               </p>
-            </div>
+            </div> */}
           </div>
         </section>
         <section className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 mb-8">
             Get Started Today
           </h2>
-          <p className="text-lg text-neutral-300 mb-6">
+          <p className="text-lg text-gray-800 mb-6">
             Discover how Reap Cash can elevate your rental business.
           </p>
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3">
-            Get Started with Reap Cash
-            <ArrowRight className="ml-2 h-5 w-5" />
+          <Button className="bg-[#041f41] hover:bg-blue-700 text-white rounded-full">
+            Get started with Reap Cash
+            <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </section>
       </div>
