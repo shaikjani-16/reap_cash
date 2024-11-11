@@ -22,7 +22,7 @@ import { WobbleCardDemo } from "@/components/wooble-card";
 
 export default function AboutUs() {
   return (
-    <div className="min-h-screen w-full bg-neutral-950 relative flex flex-col items-center justify-start antialiased pt-6">
+    <div className=" bg-[#f4f2e2] min-h-screen w-full  relative flex flex-col items-center justify-start antialiased pt-6">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
@@ -61,12 +61,14 @@ export default function AboutUs() {
                 stress.
               </p>
             </div>
-            <div className="flex flex-col items-center text-center">
-              <Users className="w-12 h-12 text-blue-500 mb-2" />
-              <h3 className="text-xl font-semibold text-white mb-2">
+            <div className="flex flex-col items-center text-center bg-gray-200 bg-opacity-100 p-2 rounded-lg">
+              <div className="rounded-full bg-white p-2">
+                <Users className="w-12 h-12 text-blue-500 mb-2" />
+              </div>
+              <h3 className="text-xl font-semibold text-[#120f07] mb-2">
                 Community
               </h3>
-              <p className="text-neutral-300">
+              <p className="text">
                 Join a network of hosts who are unlocking their earnings with
                 Reap Cash.
               </p>

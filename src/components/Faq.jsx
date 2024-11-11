@@ -41,7 +41,7 @@ const faqs = [
 
 export default function FAQPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-black">
+    <div className="flex flex-col min-h-screen bg-white dark:bg-black mt-12">
       <main className="flex-1 dark:bg-black">
         <section className="w-full py-12 md:py-24 lg:py-20 dark:bg-black">
           <div className="container px-4 md:px-6">

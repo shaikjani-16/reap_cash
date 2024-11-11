@@ -41,13 +41,13 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-neutral-950 relative flex flex-col items-center justify-start antialiased pt-6">
+    <div className="min-h-screen w-full bg-[#f4f2e2 relative flex flex-col items-center justify-start antialiased pt-6">
       <Navbar />
-      <div className="max-w-2xl mx-auto p-4 mt-16">
-        <h1 className="relative z-10 text-lg md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold mb-4 mt-2">
+      <div className="max-w-2xl mx-auto p-4 mt-20">
+        <h1 className="relative z-10 text-lg md:text-4xl bg-clip-text   text-center font-sans font-bold mb-4 mt-2 text-[#002E25]">
           Contact Us - We&apos;re Here to Help!
         </h1>
-        <p className="relative z-10 text-lg md:text-lg bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans mb-8">
+        <p className="relative text-[#120f07] z-10 text-lg md:text-lg bg-clip-text  text-center font-sans mb-8">
           At Reap Cash, we value open communication and are dedicated to
           providing you with the support you need. Whether you have questions
           about our services, need assistance with your application, or want to
@@ -57,8 +57,10 @@ export default function ContactUs() {
 
       <div className="w-full max-w-4xl mx-auto p-4 grid gap-8 md:grid-cols-2">
         <div>
-          <h2 className="text-2xl font-bold mb-4 text-white">Get in Touch</h2>
-          <div className="space-y-4 text-neutral-300">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800">
+            Get in Touch
+          </h2>
+          <div className="space-y-4 text-gray-600">
             <div className="flex items-center space-x-2">
               <Mail className="h-5 w-5" />
               <span>support@reapcash.com</span>
@@ -88,7 +90,7 @@ export default function ContactUs() {
           <h2 className="text-2xl font-bold mb-4 text-white">Contact Form</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <LabelInputContainer>
-              <Label htmlFor="name" className="text-neutral-300">
+              <Label htmlFor="name" className="text-gray-600">
                 Name
               </Label>
               <Input
@@ -97,11 +99,11 @@ export default function ContactUs() {
                 onChange={handleChange}
                 placeholder="Your name"
                 required
-                className="bg-neutral-800 text-white border-neutral-700"
+                className="bg-gray-200 text-white border-neutral-700 border"
               />
             </LabelInputContainer>
             <LabelInputContainer>
-              <Label htmlFor="email" className="text-neutral-300">
+              <Label htmlFor="email" className="text-gray-600">
                 Email
               </Label>
               <Input
@@ -111,11 +113,11 @@ export default function ContactUs() {
                 onChange={handleChange}
                 placeholder="Your email"
                 required
-                className="bg-neutral-800 text-white border-neutral-700"
+                className="bg-gray-200 text-white border-neutral-700"
               />
             </LabelInputContainer>
             <LabelInputContainer>
-              <Label htmlFor="phone" className="text-neutral-300">
+              <Label htmlFor="phone" className="text-gray-600">
                 Phone Number
               </Label>
               <Input
@@ -124,11 +126,11 @@ export default function ContactUs() {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="Your phone number"
-                className="bg-neutral-800 text-white border-neutral-700"
+                className="bg-gray-200 text-white border-neutral-700"
               />
             </LabelInputContainer>
             <LabelInputContainer>
-              <Label htmlFor="message" className="text-neutral-300">
+              <Label htmlFor="message" className="text-gray-600">
                 Message
               </Label>
               <Textarea
@@ -137,12 +139,12 @@ export default function ContactUs() {
                 onChange={handleChange}
                 placeholder="Your message"
                 required
-                className="bg-neutral-800 text-white border-neutral-700"
+                className="bg-gray-200 text-white border-dotted"
               />
             </LabelInputContainer>
             <Button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+              className="w-full bg-yellow-200 hover:bg-blue-700 text-white"
             >
               Send Message
             </Button>
@@ -186,7 +188,7 @@ export default function ContactUs() {
             <span className="sr-only">Twitter</span>
           </Link>
           <Link href="#" className="text-neutral-300 hover:text-blue-500">
-            <Instagram className="h-6 w-6" />
+            <Instagram className="h-6 w-6 hover:text-gray-600 cursor-pointer" />
             <span className="sr-only">Instagram</span>
           </Link>
           <Link href="#" className="text-neutral-300 hover:text-blue-500">
@@ -207,7 +209,7 @@ export default function ContactUs() {
         </p>
         <ButtonMoving
           borderRadius="1.75rem"
-          className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 text-xs"
+          className="bg-blue-100 dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 text-xs p-2"
         >
           Apply for Cash Advance
           <ArrowRight className="ml-2 h-4 w-4" />

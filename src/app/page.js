@@ -225,7 +225,7 @@ export default function Homepage() {
           <div className="container px-4 md:px-6 ">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="bg-[#fff] p-2 border rounded-full">
-                <p className="text-sm font-bold tracking-tighter sm:text-3xl md:text-4xl text-[#002E25] ">
+                <p className="text-sm font-bold tracking-tighter sm:text-3xl md:text-4xl text-[#002E25] text-bold">
                   Join Hosts Who Are Growing with Reap Cash
                 </p>
               </div>
